@@ -164,7 +164,7 @@ class Watermarks extends Component<IProps, State> {
 
         if (_showJitsiWatermark) {
             const style = {
-                backgroundImage: `url(${_logoUrl})`,
+                backgroundImage: 'url(images/watermark.png)',
                 maxWidth: 140,
                 maxHeight: 70,
                 position: _logoLink ? 'static' : 'absolute'

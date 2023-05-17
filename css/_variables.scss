@@ -32,7 +32,7 @@ $participantsPaneBgColor: #141414;
 $newToolbarBackgroundColor: #131519;
 $newToolbarButtonHoverColor: rgba(255, 255, 255, 0.2);
 $newToolbarButtonToggleColor: rgba(255, 255, 255, 0.15);
-$menuBG:#242528;
+$menuBG: #242528;
 $newToolbarFontSize: 24px;
 $newToolbarHangupFontSize: 32px;
 $newToolbarSize: 48px;
@@ -78,7 +78,7 @@ $chatInputSeparatorColor: #A4B8D1;
 $chatLobbyActionsSeparatorColor: #6A50D3;
 $chatLocalMessageBackgroundColor: #484A4F;
 $chatPrivateMessageBackgroundColor: rgb(153, 69, 77);
-$chatRemoteMessageBackgroundColor:  #242528;
+$chatRemoteMessageBackgroundColor: #242528;
 $sidebarWidth: 315px;
 
 /**
@@ -154,8 +154,8 @@ $welcomePageWatermarkHeight: 32px;
  */
 $welcomePageDescriptionColor: #fff;
 $welcomePageFontFamily: inherit;
-$welcomePageBackground: none;
-$welcomePageTitleColor: #fff;
+$welcomePageBackground: url('../images/welcome-background.png');
+$welcomePageTitleColor: #253858;
 
 $welcomePageHeaderBackground: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/welcome-background.png');
 $welcomePageHeaderBackgroundPosition: center;
@@ -163,7 +163,7 @@ $welcomePageHeaderBackgroundRepeat: none;
 $welcomePageHeaderBackgroundSize: cover;
 $welcomePageHeaderPaddingBottom: 15px;
 $welcomePageHeaderTitleMaxWidth: initial;
-$welcomePageHeaderTextAlign: center;
+$welcomePageHeaderTextAlign: left;
 
 $welcomePageHeaderContainerMarginTop: 104px;
 $welcomePageHeaderContainerDisplay: flex;
