@@ -34,6 +34,7 @@ body.welcome-page {
             z-index: $zindex2;
             position: relative;
             max-width: calc(100% - 40px);
+            width: 650px;
         }
 
         .header-watermark-container {
@@ -53,6 +54,7 @@ body.welcome-page {
             opacity: $welcomePageHeaderTextTitleOpacity;
             text-align: $welcomePageHeaderTextAlign;
             margin-top: 5rem;
+            display: none;
         }
 
         .header-text-subtitle {
@@ -62,7 +64,7 @@ body.welcome-page {
             line-height: 26px;
             margin: 16px 0 32px 0;
             text-align: $welcomePageHeaderTextAlign;
-
+            display: none;
         }
 
         .insecure-room-name-warning {
@@ -81,7 +83,7 @@ body.welcome-page {
                 svg {
                     fill: $defaultWarningColor;
 
-                    &>*:first-child {
+                    & > *:first-child {
                         fill: none !important;
                     }
                 }
@@ -93,6 +95,8 @@ body.welcome-page {
         }
 
         #enter_room {
+            margin: 0 auto;
+            margin-top: 2.5rem;
             display: $welcomePageEnterRoomDisplay;
             align-items: center;
             max-width: 480px;
@@ -129,7 +133,6 @@ body.welcome-page {
                     // }
                 }
             }
-
         }
 
         #moderated-meetings {
@@ -164,7 +167,7 @@ body.welcome-page {
         .tab-buttons {
             background-color: #c7ddff;
             border-radius: 6px;
-            color: #0163FF;
+            color: #0163ff;
             font-size: 14px;
             line-height: 18px;
             margin: 4px;
@@ -183,10 +186,9 @@ body.welcome-page {
                 border: 0;
 
                 &[aria-selected="true"] {
-                    background-color: #FFF;
+                    background-color: #fff;
                 }
             }
-
         }
     }
 
@@ -195,7 +197,7 @@ body.welcome-page {
         font-size: 14px;
         background: #34aa90;
         border-radius: 3px;
-        color: #FFFFFF;
+        color: #ffffff;
         cursor: pointer;
         padding: 16px 20px;
         margin-top: 1rem;
@@ -209,7 +211,6 @@ body.welcome-page {
         background: rgba(0, 0, 0, 0.38);
         border-radius: 3px;
         color: $welcomePageDescriptionColor;
-        padding: 4px;
         position: absolute;
         top: calc(35px - #{$welcomePageHeaderContainerMarginTop});
         right: 0;
@@ -224,9 +225,10 @@ body.welcome-page {
             height: 24px;
             width: 24px;
             color: black;
+            padding: 4px;
 
             svg {
-                fill: black;
+                fill: #fff;
             }
         }
     }
@@ -247,8 +249,8 @@ body.welcome-page {
         .watermark.leftwatermarknomargin {
             // width: $welcomePageWatermarkWidth;
             // height: $welcomePageWatermarkHeight;
-            width: 220px;
-            height: 50px;
+            width: 250px;
+            height: 65px;
         }
     }
 
@@ -266,6 +268,7 @@ body.welcome-page {
     .welcome-cards-container {
         color: #131519;
         padding-top: 40px;
+        display: none;
     }
 
     .welcome-card-column {
@@ -277,7 +280,7 @@ body.welcome-page {
         // margin: auto;
         margin-left: 24px;
 
-        >div {
+        > div {
             margin-bottom: 16px;
         }
     }
@@ -296,11 +299,11 @@ body.welcome-page {
         }
 
         &--blue {
-            background: #D5E5FF;
+            background: #d5e5ff;
         }
 
         &--grey {
-            background: #F2F3F4;
+            background: #f2f3f4;
         }
     }
 
