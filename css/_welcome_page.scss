@@ -34,7 +34,6 @@ body.welcome-page {
             z-index: $zindex2;
             position: relative;
             max-width: calc(100% - 40px);
-            width: 650px;
         }
 
         .header-watermark-container {
@@ -103,6 +102,12 @@ body.welcome-page {
             width: $welcomePageEnterRoomWidth;
             z-index: $zindex2;
             height: fit-content;
+            transform: translateX(-35%);
+
+            @media only screen and (max-width: 850px) {
+                transform: translateX(0);
+                margin-left: 0;
+            }
 
             .join-meeting-container {
                 margin: $welcomePageEnterRoomMargin;
